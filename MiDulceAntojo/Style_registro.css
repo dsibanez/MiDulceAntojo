@@ -1,0 +1,106 @@
+/* Reiniciamos los márgenes por defecto del navegador */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif; 
+  
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    overflow: hidden; /* Evita que aparezcan barras de desplazamiento */
+}
+
+.logoSinFondo {
+    display: flex;
+    margin: 1px auto; /* Centra la imagen horizontalmente */
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 11110px; /* Bordes redondeados para un toque más suave */
+}
+/* El contenedor que divide la pantalla en 2 */
+.contenedor-principal {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /* Evita que aparezcan barras de desplazamiento */
+}
+
+/* --- MITAD IZQUIERDA --- */
+.panel-izquierdo {
+    filter: brightness(0.6); /* Oscurece un poco la imagen para que el texto resalte más */
+    flex: 0 0 50%; /* Toma el 50% del espacio */
+    height: 100%;
+    min-width: 0; /* Evita que se haga demasiado pequeño en pantallas pequeñas */
+    background-image: url("imagenes/WhatsApp\ Image\ 2026-09-03\ at\ 6.19.07\ PM.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --- MITAD DERECHA --- */
+.panel-derecho {
+    flex: 0 0 50%; /* Toma el otro 50% del espacio */
+    height: 100%;
+    min-width: 0; /* Evita que se haga demasiado pequeño en pantallas pequeñas */
+    background-color: #091016; /* Un gris muy claro para contrastar con el cuadro blanco */
+    display: flex;
+    justify-content: center; /* Centra el cuadro horizontalmente */
+    align-items: center; /* Centra el cuadro verticalmente */
+}
+
+/* --- EL CUADRO BLANCO --- */
+.cuadro-blanco {
+    background-color: rgb(35, 36, 34);
+    padding: 30px;
+    border-radius: 22px; /* Bordes redondeados */
+    box-shadow: 10px 10px 110px rgba(184, 182, 183, 0.39); /* Sombra suave para que flote */
+    text-align: center;
+    width: 80%;
+    max-width: 350px; /* Para que no se haga gigante en pantallas grandes */
+}
+
+.cuadro-blanco h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 12px; /* Fuente cursiva y elegante */
+    color: rgb(168, 166, 167); /* Un color rosado/dulce acorde al nombre */
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.cuadro-blanco h2 {
+    color: rgb(244, 227, 231);
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+
+/* --- ESTILOS DE LOS BOTONES --- */
+button {
+    width: 100%; /* Hace que los botones ocupen todo el ancho del cuadro */
+    padding: 22px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #747474; /* Un color rosado/dulce acorde al nombre */
+    color: white;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva y elegante */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.6s ease; /* Efecto suave al pasar el mouse */
+}
+
+button:hover {
+    background-color: rgb(244, 227, 231); /* Color más oscuro al pasar el ratón */
+}
+
+/* --- RESPONSIVE (Para celulares) --- */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* Apila la imagen arriba y el menú abajo */
+        overflow-y: auto;
+    }
+    .panel-izquierdo {
+        min-height: 40vh; /* La imagen toma el 40% de la pantalla en celulares */
+    }
+    .panel-derecho {
+        min-height: 60vh;
+    }
+}

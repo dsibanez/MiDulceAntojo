@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome ADMIN</h1>
+    <div>
+        <form action="ingreso_admin.php" method="post">
+             <div>
+        <label for="usuario">INGRESE USUARIO ADMIN</label>
+        <input type="text" id="usuario" name="usuario"
+        required placeholder="Escribe tu usuario ADMIN">
+    </div>
+
+    <div>
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" id="password" name="password"
+        required placeholder="Escribe tu contraseña ADMIN">
+    </div>
+    <button id="Confirm" type="button" onclick="AdminIngreso()">INGRESAR</button>
+    <div>
+
+        </form>
+    </div>
+
+
+</body>
+<script src="Fuc_Registro.js"></script>
+
+
+</html>

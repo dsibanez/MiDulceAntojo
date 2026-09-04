@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dulce Antojo</title>
+    <link rel="stylesheet" href="Style_registro.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<body>
+    <div class="contenedor-principal">
+        
+        <!-- Mitad izquierda (Solo la imagen de fondo) -->
+        <div class="panel-izquierdo"></div>
+
+        <!-- Mitad derecha (El cuadro blanco de inicio de sesión) -->
+        <div class="panel-derecho">
+            
+            <div class="cuadro-blanco">
+                <h1>BIENVENIDO</h1>
+                
+                <form action="procesar_registro.php" method="post">
+                    <h2>
+                        <br>
+                        <img src="imagenes/Image (2).jpg" alt="logoSinFondo" class="logoSinFondo">
+                    </h2>
+
+                    <div>
+                        <button id="BtnCliente" type="button" onclick="PrincipalPgn()">Soy Cliente</button>
+                    </div>
+                    <div>
+                        <button id="BtnAdmin" type="button" onclick="AdminPgn()">Soy Administrador</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Fuc_Registro.js"></script>
+</body>
+</html>
