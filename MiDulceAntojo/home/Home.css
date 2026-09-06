@@ -198,6 +198,7 @@
   margin-top: 1dvh;
   width: 25%;
   height: 8dvh;
+  cursor: pointer;
 }
 
 /*productos mas vendidos*/
@@ -208,6 +209,7 @@
   justify-content: space-evenly;
   gap: 5vh;
   padding: 3% 1%;
+  margin-top: 1dvh;
   height: 60dvh;
 }
 
@@ -330,4 +332,14 @@
 .footerIcono img {
   width: 3dvh;
   height: 3dvh;
+}
+
+.blurBackground {
+  filter: blur(6px);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+}
+
+body.modalAbierto {
+  overflow: hidden;
 }

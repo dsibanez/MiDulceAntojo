@@ -4,251 +4,256 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Home.css" />
+    <link rel="stylesheet" href="./listaProductos/ListaProductos.css" />
     <title>Mi Dulce Antojo</title>
   </head>
   <body class="body">
-    <nav class="navbar">
-      <div class="logoContainer">
-        <img
-          class="logoSupIzq"
-          src="../imagenes/Image__2_-removebg-preview.png"
-          alt="logotipoclicekable"
-        />
-      </div>
-      <div class="BusquedaContainer" style="margin-left: auto">
-        <input
-          type="text"
-          id="inputBuscar"
-          class="inputBuscar"
-          placeholder="BUSCAR"
-        />
-        <button id="btnBuscar" class="icono-buscar">
+    <div id="contenidoPrincipal">
+      <nav class="navbar">
+        <div class="logoContainer">
           <img
-            style="width: 4dvh; height: 4dvh"
-            src="https://cdn-icons-png.flaticon.com/128/151/151773.png"
-            alt="lupaBusqueda"
+            class="logoSupIzq"
+            src="../imagenes/Image__2_-removebg-preview.png"
+            alt="logotipoclicekable"
           />
-        </button>
+        </div>
+        <div class="BusquedaContainer" style="margin-left: auto">
+          <input
+            type="text"
+            id="inputBuscar"
+            class="inputBuscar"
+            placeholder="BUSCAR"
+          />
+          <button id="btnBuscar" class="icono-buscar">
+            <img
+              style="width: 4dvh; height: 4dvh"
+              src="https://cdn-icons-png.flaticon.com/128/151/151773.png"
+              alt="lupaBusqueda"
+            />
+          </button>
+        </div>
+        <div></div>
+      </nav>
+      <div>
+        <h1 class="TituloBienvenida">Bienvenido a Mi Dulce Antojo</h1>
       </div>
-      <div></div>
-    </nav>
-    <div>
-      <h1 class="TituloBienvenida">Bienvenido a Mi Dulce Antojo</h1>
-    </div>
-    <nav class="advertising">
-      <div class="ad1"></div>
-      <div class="ad2"><h1>Espacio para el slogan de la pasteleria</h1></div>
-      <!--el fondo de diferente color no va a estar, unicamente para
-      visualizacion-->
-    </nav>
-
-    <!--SECCION DE PASTELES-->
-
-    <section>
-      <div class="tituloSeccion"><h2>nuestros pasteles</h2></div>
       <nav class="advertising">
-        <div class="itemMayor"></div>
-        <div class="contenedorItemMenor">
-          <h3>espacio para un texto representativo de la categoria</h3>
-          <div class="filaItemMenor">
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-          </div>
-          <div class="masItems">
-            <div class="verMas">
-              <h4>VER MÁS</h4>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!--SECCION DE GALLETAS-->
-    <section>
-      <div class="tituloSeccion"><h2>nuestras galletas</h2></div>
-      <nav class="advertising">
-        <div class="contenedorItemMenor">
-          <h3>espacio para un texto representativo de la categoria</h3>
-          <div class="filaItemMenor">
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-          </div>
-          <div class="masItems">
-            <div class="verMas">
-              <h4>VER MÁS</h4>
-            </div>
-          </div>
-        </div>
-        <div class="itemMayor"></div>
-      </nav>
-    </section>
-    <!--SECCION DE POSTRES-->
-
-    <section>
-      <div class="tituloSeccion"><h2>nuestros postres</h2></div>
-      <nav class="advertising">
-        <div class="itemMayor"></div>
-        <div class="contenedorItemMenor">
-          <h3>espacio para un texto representativo de la categoria</h3>
-          <div class="filaItemMenor">
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-            <div class="itemMenor">
-              <div class="descripcionItem">
-                <h5>Descripción del producto</h5>
-              </div>
-            </div>
-          </div>
-          <div class="masItems">
-            <div class="verMas">
-              <h4>VER MÁS</h4>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <!--productos mas vendidos-->
-
-    <section>
-      <div class="tituloMasVendidos"><h2>productos mas vendidos</h2></div>
-      <nav class="topProductos">
-        <div class="topProducto1"></div>
-        <div class="topProducto2"></div>
+        <div class="ad1"></div>
+        <div class="ad2"><h1>Espacio para el slogan de la pasteleria</h1></div>
         <!--el fondo de diferente color no va a estar, unicamente para
       visualizacion-->
       </nav>
-    </section>
 
-    <!--FOOTER-->
-    <footer class="footer">
-      <div class="footerColumnas">
-        <div class="footerColumna">
-          <h4>
-            Mauris egestas turpis. Vitae pulvinar lobortis vel ut at. Sed
-            facilisis vestibulum, sed bibendum.
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            tincidunt et turpis habitasse ultrices condimentum velit. At nulla
-            eu urna cras sed odio mauris vivamus erat. Elit mi massa nisl enim.
-            Tristique massa sit est in senectus amet, ut nullam. Amet
-            consectetur netus duis diam.
-          </p>
-          <p>
-            Consectetur pellentesque non eget nisl, pretium, ultrices. Tortor
-            dignissim pretium aliquet nunc, pulvinar. Faucibus tincidunt odio
-            tincidunt massa lobortis aliquam venenatis neque. Tortor porttitor
-            parturient sagittis non faucibus faucibus tincidunt ut aliquam.
-          </p>
-          <p>
-            Egestas sed massa enim tempor at orci dignissim id. Sed metus mi leo
-            rutrum felis.
-          </p>
-        </div>
+      <!--SECCION DE PASTELES-->
 
-        <div class="footerColumna">
-          <h4>
-            Vitae, tristique suspendisse condimentum pulvinar rutrum dui sed
-            tincidunt ut.
-          </h4>
-          <div class="footerListas">
-            <ul class="footerLista">
-              <li>Home</li>
-              <li>Products</li>
-              <li>Autors</li>
-              <li>Labels</li>
-              <li>News</li>
-              <li>Our Company</li>
-              <li>Shop</li>
-            </ul>
-            <ul class="footerLista">
-              <li>Bitcoins</li>
-              <li>Versions</li>
-              <li>Meatballs</li>
-            </ul>
-            <ul class="footerLista">
-              <li>Jobs</li>
-              <li>Terms of Use</li>
-              <li>Policy</li>
-              <li>Privacy</li>
-              <li>Twitter</li>
-              <li>Online</li>
-              <li>Websites</li>
-            </ul>
+      <section>
+        <div class="tituloSeccion"><h2>nuestros pasteles</h2></div>
+        <nav class="advertising">
+          <div class="itemMayor"></div>
+          <div class="contenedorItemMenor">
+            <h3>espacio para un texto representativo de la categoria</h3>
+            <div class="filaItemMenor">
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="masItems">
+              <div class="verMas" onclick="abrirListaProductos('pasteles')">
+                <h4>VER MÁS</h4>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
+      </section>
+      <!--SECCION DE GALLETAS-->
+      <section>
+        <div class="tituloSeccion"><h2>nuestras galletas</h2></div>
+        <nav class="advertising">
+          <div class="contenedorItemMenor">
+            <h3>espacio para un texto representativo de la categoria</h3>
+            <div class="filaItemMenor">
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="masItems">
+              <div class="verMas" onclick="abrirListaProductos('galletas')">
+                <h4>VER MÁS</h4>
+              </div>
+            </div>
+          </div>
+          <div class="itemMayor"></div>
+        </nav>
+      </section>
+      <!--SECCION DE POSTRES-->
 
-        <div class="footerColumna">
-          <h4>@Mauris porttitor diam facilisis sit amet.</h4>
-          <div class="footerSuscripcion">
+      <section>
+        <div class="tituloSeccion"><h2>nuestros postres</h2></div>
+        <nav class="advertising">
+          <div class="itemMayor"></div>
+          <div class="contenedorItemMenor">
+            <h3>espacio para un texto representativo de la categoria</h3>
+            <div class="filaItemMenor">
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+              <div class="itemMenor">
+                <div class="descripcionItem">
+                  <h5>Descripción del producto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="masItems">
+              <div class="verMas" onclick="abrirListaProductos('postres')">
+                <h4>VER MÁS</h4>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!--productos mas vendidos-->
+
+      <section>
+        <div class="tituloMasVendidos"><h2>productos mas vendidos</h2></div>
+        <nav class="topProductos">
+          <div class="topProducto1"></div>
+          <div class="topProducto2"></div>
+          <!--el fondo de diferente color no va a estar, unicamente para
+      visualizacion-->
+        </nav>
+      </section>
+
+      <!--FOOTER-->
+      <footer class="footer">
+        <div class="footerColumnas">
+          <div class="footerColumna">
+            <h4>
+              Mauris egestas turpis. Vitae pulvinar lobortis vel ut at. Sed
+              facilisis vestibulum, sed bibendum.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+              tincidunt et turpis habitasse ultrices condimentum velit. At nulla
+              eu urna cras sed odio mauris vivamus erat. Elit mi massa nisl
+              enim. Tristique massa sit est in senectus amet, ut nullam. Amet
+              consectetur netus duis diam.
+            </p>
+            <p>
+              Consectetur pellentesque non eget nisl, pretium, ultrices. Tortor
+              dignissim pretium aliquet nunc, pulvinar. Faucibus tincidunt odio
+              tincidunt massa lobortis aliquam venenatis neque. Tortor porttitor
+              parturient sagittis non faucibus faucibus tincidunt ut aliquam.
+            </p>
             <p>
               Egestas sed massa enim tempor at orci dignissim id. Sed metus mi
               leo rutrum felis.
             </p>
           </div>
-          <p class="footerArroba">@Mauris</p>
-          <div class="footerIconos">
-            <div class="footerIcono">
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/2majoreleg"
-                alt="icono1"
-              />
+
+          <div class="footerColumna">
+            <h4>
+              Vitae, tristique suspendisse condimentum pulvinar rutrum dui sed
+              tincidunt ut.
+            </h4>
+            <div class="footerListas">
+              <ul class="footerLista">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Autors</li>
+                <li>Labels</li>
+                <li>News</li>
+                <li>Our Company</li>
+                <li>Shop</li>
+              </ul>
+              <ul class="footerLista">
+                <li>Bitcoins</li>
+                <li>Versions</li>
+                <li>Meatballs</li>
+              </ul>
+              <ul class="footerLista">
+                <li>Jobs</li>
+                <li>Terms of Use</li>
+                <li>Policy</li>
+                <li>Privacy</li>
+                <li>Twitter</li>
+                <li>Online</li>
+                <li>Websites</li>
+              </ul>
             </div>
-            <div class="footerIcono">
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
-                alt="icono2"
-              />
+          </div>
+
+          <div class="footerColumna">
+            <h4>@Mauris porttitor diam facilisis sit amet.</h4>
+            <div class="footerSuscripcion">
+              <p>
+                Egestas sed massa enim tempor at orci dignissim id. Sed metus mi
+                leo rutrum felis.
+              </p>
             </div>
-            <div class="footerIcono">
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
-                alt="icono3"
-              />
-            </div>
-            <div class="footerIcono">
-              <img
-                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
-                alt="icono4"
-              />
+            <p class="footerArroba">@Mauris</p>
+            <div class="footerIconos">
+              <div class="footerIcono">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2majoreleg"
+                  alt="icono1"
+                />
+              </div>
+              <div class="footerIcono">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                  alt="icono2"
+                />
+              </div>
+              <div class="footerIcono">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                  alt="icono3"
+                />
+              </div>
+              <div class="footerIcono">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                  alt="icono4"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <div id="modalContainer"></div>
+    <script src="./Home.js"></script>
   </body>
 </html>
