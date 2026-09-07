@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="./listaProductos/ListaProductos.css">
+
+    <title>Mi Dulce Antojo</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  
+
+<body class="body">
+
+    <div id="contenidoPrincipal">
+
+        <nav class="navbar">
+
+            <div class="logoContainer">
+                <img
+                    class="logoSupIzq"
+                    src="../imagenes/Image__2_-removebg-preview.png"
+                    alt="logotipoclicekable"
+                >
+            </div>
+
+            <div class="BusquedaContainer" style="margin-left: auto">
+
+                <input
+                    type="text"
+                    id="inputBuscar"
+                    class="inputBuscar"
+                    placeholder="BUSCAR"
+                >
+
+                <button id="btnBuscar" class="icono-buscar">
+                    <img
+                        style="width: 4dvh; height: 4dvh"
+                        src="https://cdn-icons-png.flaticon.com/128/151/151773.png"
+                        alt="lupaBusqueda"
+                    >
+                </button>
+
+            </div>
+
+            <div></div>
+
+        </nav>
+
+
+        <div>
+            <h1 class="TituloBienvenida">
+                Bienvenido a Mi Dulce Antojo
+            </h1>
+        </div>
+
+
+        <nav class="advertising">
+
+            <div class="ad1"></div>
+
+            <div class="ad2">
+                <h1>
+                    El sabor de lo hecho en casa, con el toque de un maestro.
+                </h1>
+            </div>
+
+        </nav>
+
+
+        <!-- SECCION DE PASTELES -->
+
+        <section>
+
+            <div class="tituloSeccion">
+                <h2>nuestros pasteles</h2>
+            </div>
+
+            <nav class="advertising">
+
+                <div class="itemMayor"></div>
+
+                <div class="contenedorItemMenor">
+
+                    <h3>
+                        El toque dulce que tu celebración necesita.
+
+                    </h3>
+
+                    <div class="filaItemMenor">
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Pasteles personalizados</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Pasteles de cumpleaños</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Sabores irresistibles</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="masItems">
+
+                        <div
+                            class="verMas"
+                            onclick="abrirListaProductos('pasteles')"
+                        >
+                            <h4>VER MÁS</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </section>
+
+
+        <!-- SECCION DE GALLETAS -->
+
+        <section>
+
+            <div class="tituloSeccion">
+                <h2>nuestras galletas</h2>
+            </div>
+
+            <nav class="advertising">
+
+                <div class="contenedorItemMenor">
+
+                    <h3>
+                        Pequeños momentos de felicidad hechos con
+                        nuestras deliciosas galletas artesanales.
+                    </h3>
+
+                    <div class="filaItemMenor">
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Galletas con chocolate</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Galletas artesanales</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Galletas decoradas</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="masItems">
+
+                        <div
+                            class="verMas"
+                            onclick="abrirListaProductos('galletas')"
+                        >
+                            <h4>VER MÁS</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="itemMayor"></div>
+
+            </nav>
+
+        </section>
+
+
+        <!-- SECCION DE POSTRES -->
+
+        <section>
+
+            <div class="tituloSeccion">
+                <h2>nuestros postres</h2>
+            </div>
+
+            <nav class="advertising">
+
+                <div class="itemMayor"></div>
+
+                <div class="contenedorItemMenor">
+
+                    <h3>
+                        Deliciosos postres preparados para endulzar
+                        tus momentos.
+                    </h3>
+
+                    <div class="filaItemMenor">
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Cheesecakes</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Postres de chocolate</h5>
+                            </div>
+
+                        </div>
+
+
+                        <div class="itemMenor">
+
+                            <div class="descripcionItem">
+                                <h5>Postres artesanales</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="masItems">
+
+                        <div
+                            class="verMas"
+                            onclick="abrirListaProductos('postres')"
+                        >
+                            <h4>VER MÁS</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </section>
+
+
+        <!-- PRODUCTOS MAS VENDIDOS -->
+
+        <section>
+
+            <div class="tituloMasVendidos">
+                <h2>productos mas vendidos</h2>
+            </div>
+
+            <nav class="topProductos">
+
+                <div class="topProducto1"></div>
+
+                <div class="topProducto2"></div>
+
+            </nav>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <div class="footerColumnas">
+
+
+                <div class="footerColumna">
+
+                    <h4>
+                        Mi Dulce Antojo: un lugar para disfrutar
+                        lo mejor de la repostería.
+                    </h4>
+
+                    <p>
+                        En Mi Dulce Antojo preparamos pasteles,
+                        galletas y postres pensados para acompañar
+                        tus momentos especiales.
+                    </p>
+
+                    <p>
+                        Nos encanta combinar buenos ingredientes,
+                        dedicación y mucho cariño para ofrecer
+                        productos deliciosos y de calidad.
+                    </p>
+
+                    <p>
+                        Gracias por elegir Mi Dulce Antojo para
+                        compartir y celebrar.
+                    </p>
+
+                </div>
+
+
+                <div class="footerColumna">
+
+                    <h4>
+                        Conoce nuestros productos y encuentra
+                        tu dulce favorito.
+                    </h4>
+
+                    <div class="footerListas">
+
+                        <ul class="footerLista">
+
+                            <li>Inicio</li>
+                            <li>Pasteles</li>
+                            <li>Galletas</li>
+                            <li>Postres</li>
+                            <li>Productos más vendidos</li>
+
+                        </ul>
+
+
+                        <ul class="footerLista">
+
+                            <li>Productos</li>
+                            <li>Pedidos</li>
+                            <li>Contacto</li>
+
+                        </ul>
+
+
+                        <ul class="footerLista">
+
+                            <li>Sobre nosotros</li>
+                            <li>Términos de uso</li>
+                            <li>Privacidad</li>
+                            <li>Redes sociales</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footerColumna">
+
+                    <h4>
+                        Gracias por visitar Mi Dulce Antojo.
+                    </h4>
+
+                    <div class="footerSuscripcion">
+
+                        <p>
+                            Descubre nuestros productos y disfruta
+                            de un delicioso momento con los sabores
+                            que tenemos preparados para ti.
+                        </p>
+
+                    </div>
+
+                    <p class="footerArroba">
+                        @MiDulceAntojo
+                    </p>
+
+                    <div class="footerIconos">
+
+                        <div class="footerIcono">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/2majoreleg"
+                                alt="icono1"
+                            >
+                        </div>
+
+                        <div class="footerIcono">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                                alt="icono2"
+                            >
+                        </div>
+
+                        <div class="footerIcono">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                                alt="icono3"
+                            >
+                        </div>
+
+                        <div class="footerIcono">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/128/majoreleg"
+                                alt="icono4"
+                            >
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <div id="modalContainer"></div>
+
+    <script src="./Home.js"></script>
+
+</body>
+
+</html>
