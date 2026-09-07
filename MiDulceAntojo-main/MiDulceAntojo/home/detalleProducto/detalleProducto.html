@@ -1,0 +1,17 @@
+<div class="modalOverlay" onclick="cerrarDetalleProducto()">
+  <div class="modalContenido" onclick="event.stopPropagation()">
+    <button class="btnCerrar" onclick="cerrarDetalleProducto()">&times;</button>
+    
+    <div class="detalleContenedor">
+      <div class="detalleColumnaImagen">
+        <img id="detalleImagen" src="" alt="Imagen del producto" />
+      </div>
+      
+      <div class="detalleColumnaInfo">
+        <h2 id="detalleNombre"></h2>
+        <span id="detallePrecio" class="precioTag"></span>
+        <p id="detalleDescripcion"></p>
+      </div>
+    </div>
+  </div>
+</div>

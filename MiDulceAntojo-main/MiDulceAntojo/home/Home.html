@@ -4,41 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./Home.css">
-    <link rel="stylesheet" href="./listaProductos/ListaProductos.css">
-
-    <title>Mi Dulce Antojo</title>
-</head>
-<link
+    <link rel="stylesheet" href="./listaProductos/listaProductos.css">
+    <link rel="stylesheet" href="./detalleProducto/detalleProducto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
     rel="stylesheet"
   />
+    <title>Mi Dulce Antojo</title>
+</head>
+
   
 
 <body class="body">
-
     <div id="contenidoPrincipal">
-
         <nav class="navbar">
-
             <div class="logoContainer">
                 <img
                     class="logoSupIzq"
-                    src="../imagenes/Image__2_-removebg-preview.png"
+                    src="../imagenes/logo-midulce-antojo (1).svg"
                     alt="logotipoclicekable"
                 >
             </div>
-
             <div class="BusquedaContainer" style="margin-left: auto">
-
                 <input
                     type="text"
                     id="inputBuscar"
                     class="inputBuscar"
                     placeholder="BUSCAR"
                 >
-
                 <button id="btnBuscar" class="icono-buscar">
                     <img
                         style="width: 4dvh; height: 4dvh"
@@ -46,11 +43,7 @@
                         alt="lupaBusqueda"
                     >
                 </button>
-
             </div>
-
-            <div></div>
-
         </nav>
 
 
@@ -60,67 +53,40 @@
             </h1>
         </div>
 
-
         <nav class="advertising">
-
             <div class="ad1"></div>
-
             <div class="ad2">
-                <h1>
+                <h1 class="vast-shadow-regular">
                     El sabor de lo hecho en casa, con el toque de un maestro.
                 </h1>
             </div>
-
         </nav>
 
 
         <!-- SECCION DE PASTELES -->
-
         <section>
-
-            <div class="tituloSeccion">
+            <div class="tituloSeccion vast-shadow-regular">
                 <h2>nuestros pasteles</h2>
             </div>
-
             <nav class="advertising">
-
-                <div class="itemMayor"></div>
-
+                <div class="itemMayor" style="background-image: url('../imagenes/imagen pasteles.jpg');"></div>
                 <div class="contenedorItemMenor">
-
-                    <h3>
+                    <h3 class="vast-shadow-regular">
                         El toque dulce que tu celebración necesita.
-
                     </h3>
-
                     <div class="filaItemMenor">
+                        <div class="itemMenor" style="background-image: url('../imagenes/pastel personalizado.webp');" onclick="abrirDetallePorId1('pasteles', 'pasteles-personalizados')">
+    <div class="descripcionItem"><h5>Pasteles personalizados</h5></div>
+</div>
 
-                        <div class="itemMenor">
+<div class="itemMenor" style="background-image: url('../imagenes/pastel cumpleaños.jpg');" onclick="abrirDetallePorId1('pasteles', 'pastel-cumpleaños')">
+    <div class="descripcionItem"><h5>Pasteles de cumpleaños</h5></div>
+</div>
 
-                            <div class="descripcionItem">
-                                <h5>Pasteles personalizados</h5>
-                            </div>
-
-                        </div>
-
-
-                        <div class="itemMenor">
-
-                            <div class="descripcionItem">
-                                <h5>Pasteles de cumpleaños</h5>
-                            </div>
-
-                        </div>
-
-
-                        <div class="itemMenor">
-
-                            <div class="descripcionItem">
-                                <h5>Sabores irresistibles</h5>
-                            </div>
-
-                        </div>
-
+<!-- este ya lo tenías -->
+<div class="itemMenor" style="background-image: url('../imagenes/sabores irresistibles.jpg');" onclick="abrirDetallePorId1('pasteles', 'pastel-irresistible')">
+    <div class="descripcionItem"><h5>Sabores irresistibles</h5></div>
+</div>
                     </div>
 
 
@@ -132,181 +98,121 @@
                         >
                             <h4>VER MÁS</h4>
                         </div>
-
                     </div>
-
                 </div>
-
             </nav>
-
         </section>
-
 
         <!-- SECCION DE GALLETAS -->
 
         <section>
 
-            <div class="tituloSeccion">
+            <div class="tituloSeccion vast-shadow-regular">
                 <h2>nuestras galletas</h2>
             </div>
-
             <nav class="advertising">
-
                 <div class="contenedorItemMenor">
-
-                    <h3>
+                    <h3 class="vast-shadow-regular" style="margin-bottom:0">
                         Pequeños momentos de felicidad hechos con
-                        nuestras deliciosas galletas artesanales.
+                        nuestras deliciosas galletas.
+
                     </h3>
-
-                    <div class="filaItemMenor">
-
-                        <div class="itemMenor">
-
+                    <div class="filaItemMenor" style="margin-top: 0">
+                        <div class="itemMenor" style="background-image: url('../imagenes/galletas chocolate.jpg');" onclick="abrirDetallePorId1('galletas', 'galleta-chocolate')">
                             <div class="descripcionItem">
                                 <h5>Galletas con chocolate</h5>
                             </div>
-
                         </div>
 
-
-                        <div class="itemMenor">
-
+                        <div class="itemMenor" style="background-image: url('../imagenes/galletas artesanales.jpg');" onclick="abrirDetallePorId1('galletas', 'galleta-artesanales')">
                             <div class="descripcionItem">
                                 <h5>Galletas artesanales</h5>
                             </div>
-
                         </div>
-
-
-                        <div class="itemMenor">
-
+                        <div class="itemMenor" style="background-image: url('../imagenes/galletas decoradas.jpg');" onclick="abrirDetallePorId1('galletas', 'galleta-decoradas')">
                             <div class="descripcionItem">
                                 <h5>Galletas decoradas</h5>
                             </div>
-
                         </div>
-
                     </div>
-
-
                     <div class="masItems">
-
                         <div
                             class="verMas"
                             onclick="abrirListaProductos('galletas')"
                         >
                             <h4>VER MÁS</h4>
                         </div>
-
                     </div>
-
                 </div>
-
-
-                <div class="itemMayor"></div>
-
+                <div class="itemMayor" style="background-image: url('../imagenes/imagen galletas.jpg');"></div>
             </nav>
-
         </section>
 
 
         <!-- SECCION DE POSTRES -->
 
         <section>
-
-            <div class="tituloSeccion">
+            <div class="tituloSeccion vast-shadow-regular">
                 <h2>nuestros postres</h2>
             </div>
-
             <nav class="advertising">
-
-                <div class="itemMayor"></div>
-
+                <div class="itemMayor" style="background-image: url('../imagenes/imagen postres.jpg');"></div>
                 <div class="contenedorItemMenor">
-
-                    <h3>
+                    <h3 class="vast-shadow-regular">
                         Deliciosos postres preparados para endulzar
                         tus momentos.
                     </h3>
-
                     <div class="filaItemMenor">
-
-                        <div class="itemMenor">
-
+                        <div class="itemMenor" style="background-image: url('../imagenes/cheesecake.jpg');" onclick="abrirDetallePorId1('postres', 'cheesecake')">
                             <div class="descripcionItem">
                                 <h5>Cheesecakes</h5>
                             </div>
-
                         </div>
 
-
-                        <div class="itemMenor">
-
+                        <div class="itemMenor" style="background-image: url('../imagenes/postres chocolate.png');" onclick="abrirDetallePorId1('postres', 'postres-chocolate')">
                             <div class="descripcionItem">
                                 <h5>Postres de chocolate</h5>
                             </div>
-
                         </div>
 
-
-                        <div class="itemMenor">
-
+                        <div class="itemMenor" style="background-image: url('../imagenes/postres artesanales.jpg');" onclick="abrirDetallePorId1('postres', 'postres-artesanales')">
                             <div class="descripcionItem">
                                 <h5>Postres artesanales</h5>
                             </div>
-
                         </div>
-
                     </div>
 
 
                     <div class="masItems">
-
                         <div
                             class="verMas"
                             onclick="abrirListaProductos('postres')"
                         >
                             <h4>VER MÁS</h4>
                         </div>
-
                     </div>
-
                 </div>
-
             </nav>
-
         </section>
 
 
         <!-- PRODUCTOS MAS VENDIDOS -->
-
         <section>
-
-            <div class="tituloMasVendidos">
+            <div class="tituloMasVendidos vast-shadow-regular">
                 <h2>productos mas vendidos</h2>
             </div>
-
             <nav class="topProductos">
-
                 <div class="topProducto1"></div>
-
                 <div class="topProducto2"></div>
-
             </nav>
-
         </section>
 
 
         <!-- FOOTER -->
 
-        <footer class="footer">
-
+        <footer class="footer vast-shadow-regular">
             <div class="footerColumnas">
-
-
                 <div class="footerColumna">
-
                     <h4>
                         Mi Dulce Antojo: un lugar para disfrutar
                         lo mejor de la repostería.
@@ -328,118 +234,89 @@
                         Gracias por elegir Mi Dulce Antojo para
                         compartir y celebrar.
                     </p>
-
                 </div>
 
 
                 <div class="footerColumna">
-
                     <h4>
                         Conoce nuestros productos y encuentra
                         tu dulce favorito.
                     </h4>
-
                     <div class="footerListas">
-
                         <ul class="footerLista">
-
                             <li>Inicio</li>
                             <li>Pasteles</li>
                             <li>Galletas</li>
                             <li>Postres</li>
                             <li>Productos más vendidos</li>
-
                         </ul>
 
-
                         <ul class="footerLista">
-
                             <li>Productos</li>
                             <li>Pedidos</li>
                             <li>Contacto</li>
-
                         </ul>
 
-
                         <ul class="footerLista">
-
                             <li>Sobre nosotros</li>
                             <li>Términos de uso</li>
                             <li>Privacidad</li>
                             <li>Redes sociales</li>
-
                         </ul>
-
                     </div>
-
                 </div>
 
-
                 <div class="footerColumna">
-
                     <h4>
                         Gracias por visitar Mi Dulce Antojo.
                     </h4>
-
                     <div class="footerSuscripcion">
-
                         <p>
                             Descubre nuestros productos y disfruta
                             de un delicioso momento con los sabores
                             que tenemos preparados para ti.
                         </p>
-
                     </div>
-
                     <p class="footerArroba">
                         @MiDulceAntojo
                     </p>
-
                     <div class="footerIconos">
-
                         <div class="footerIcono">
                             <img
                                 src="https://cdn-icons-png.flaticon.com/128/2majoreleg"
                                 alt="icono1"
                             >
                         </div>
-
                         <div class="footerIcono">
                             <img
                                 src="https://cdn-icons-png.flaticon.com/128/majoreleg"
                                 alt="icono2"
                             >
                         </div>
-
                         <div class="footerIcono">
                             <img
                                 src="https://cdn-icons-png.flaticon.com/128/majoreleg"
                                 alt="icono3"
                             >
                         </div>
-
                         <div class="footerIcono">
                             <img
                                 src="https://cdn-icons-png.flaticon.com/128/majoreleg"
                                 alt="icono4"
                             >
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-        </footer>
-
+       </footer>
     </div>
 
-
+    <!-- Contenedor único para modales -->
     <div id="modalContainer"></div>
+
+    
 
     <script src="./Home.js"></script>
 
 </body>
-
 </html>

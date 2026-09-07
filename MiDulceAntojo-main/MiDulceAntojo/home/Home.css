@@ -1,9 +1,15 @@
 :root {
-  --color-rosa-primario: #fdfdfd;
+  --color-rosa-primario: #fcd9d9;
   --color-rosa-secundario: #97507d;
   --color-cafe-primario: #1a0909;
   --border-radius: 30px;
 }
+.vast-shadow-regular {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .body {
   background-color: var(--color-rosa-primario);
   font-family: dancing script, cursive;
@@ -80,7 +86,7 @@
   }
 }
 .ad1 {
-  background-image: url("../imagenes/Image__2_-removebg-preview.png");
+  background-image: url("../imagenes/logo-midulce-antojo\ \(1\).svg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -121,7 +127,7 @@
 .tituloSeccion h2 {
   font-size: 7dvh;
   margin: 0; /* elimina el margen por defecto del h2 */
-  color: white;
+  color: var(--color-rosa-primario);
   border-radius: var(--border-radius);
 }
 .itemMayor {
@@ -167,17 +173,22 @@
   align-items: flex-end;
   width: 30%;
   height: 20dvh;
+  cursor: pointer;
+}
+.itemMenor:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .descripcionItem {
   display: flex;
   border-radius: var(--border-radius);
-  background-color: rgb(116, 109, 184);
+  background-color: rgb(0, 0, 0, 0.25);
   justify-content: center;
   align-items: center;
-  margin-top: 1dvh;
   width: 100%;
   height: 4dvh;
+  margin-bottom: 1.9dvh;
 }
 
 .descripcionItem h5 {
@@ -209,6 +220,10 @@
   height: 8dvh;
   cursor: pointer;
 }
+.verMas:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
 
 /*productos mas vendidos*/
 
@@ -230,6 +245,11 @@
   gap: 15px;
   width: 40%;
   height: 70dvh;
+  cursor: pointer;
+}
+.topProducto1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .topProducto2 {
@@ -241,6 +261,11 @@
   align-items: center;
   width: 40%;
   height: 70dvh;
+  cursor: pointer;
+}
+.topProducto2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 .tituloMasVendidos {
   display: flex;
